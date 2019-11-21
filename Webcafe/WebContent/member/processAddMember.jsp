@@ -15,7 +15,7 @@
 
 	request.setCharacterEncoding("UTF-8");
 	
-	String realFolder = "C:\\Users\\USER\\eclipse-workspace\\webmarket\\WebContent\\resources\\images";
+	String realFolder = "C:\\Users\\USER\\eclipse-workspace\\Webcafe\\WebContent\\resources\\images";
 	int maxSize = 5 * 1024 * 1024;
 	String encType = "utf-8";
 
