@@ -56,7 +56,7 @@
 							</p>
 						</div>
 						<div class="left  text">
-							<img style="margin-left: 10px;" src="../resources/images/<%=rs.getString("image")%>" class="card-img Pimage"
+							<img style="margin-left: 10px; width: 500px;" src="../resources/images/<%=rs.getString("image")%>" class="card-img Pimage"
 								alt="이미지">
 							<p class="Ptext">
 								<%=rs.getString("text")%>

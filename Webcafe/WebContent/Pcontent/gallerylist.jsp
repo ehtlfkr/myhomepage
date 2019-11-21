@@ -16,11 +16,13 @@
 				while (rs.next()) {
 
 			%>
-			<li style=" float: left; width: 240px; height: 210px;">
+			<li style=" float: left; width: 240px; margin: 0 15px 15px 15px; ">
 				<a href="./Pcontent/imagegallery.jsp?id=<%=rs.getString("galleryid")%>">
 					<div class="card">
 						<div class="card-body">
-							<img src="./resources/images/<%=rs.getString("image")%>" class="card-img-top">
+							<div style="height: 180px; overflow: hidden; background-color: #f3f3f3;" class="card-img-top">
+								<img src="./resources/images/<%=rs.getString("image")%>" style="width: 150%;">
+							</div>
 							<p class="card-text"><%=rs.getString("username")%></p>
 							<p class="card-text"><%=rs.getString("text")%></p>
 						</div>

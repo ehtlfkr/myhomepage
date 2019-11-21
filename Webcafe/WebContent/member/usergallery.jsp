@@ -26,10 +26,10 @@
 			<jsp:include page="../Pcontent/user.jsp" flush="true" />
 			
 			<div id="mainpage" class="P_Content">
-				<div class="P_text main_p">
-						<h4>갤러리</h4>
+				<div class="P_image main_p" style=" width: 100%;">
+						<h4>갤러리보기</h4>
 						<div>
-							<ul class="postlist list-group list-group-flush">
+							<ul>
 								<%
 									String display = "block";
 									String id = request.getParameter("id");
@@ -42,11 +42,13 @@
 									while (rs.next()) {
 					
 								%>
-								<li style=" float: left; width: 240px; height: 210px;">
+								<li style=" float: left; width: 300px; margin-right: 10px;">
 									<a href="/Webcafe/Pcontent/imagegallery.jsp?id=<%=rs.getString("galleryid")%>">
 										<div class="card">
 											<div class="card-body">
-												<img src="/Webcafe/resources/images/<%=rs.getString("image")%>" class="card-img-top">
+												<div style="height: 220px; overflow: hidden; background-color: #f3f3f3;" class="card-img-top">
+													<img src="/Webcafe/resources/images/<%=rs.getString("image")%>" style="width: 150%;">
+												</div>
 												<p class="card-text"><%=rs.getString("username")%></p>
 												<p class="card-text"><%=rs.getString("text")%></p>
 											</div>
@@ -63,7 +65,7 @@
 										conn.close();
 								%>
 							</ul>
-					
+	
 						</div>
 					</div>
 				</div>

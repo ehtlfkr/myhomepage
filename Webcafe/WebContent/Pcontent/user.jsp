@@ -29,6 +29,16 @@
 				<p><a href="/Webcafe/member/resultMember.jsp?id=<%= sessionId %>" title="프로필 보기">[<%= rs.getString("name") %> 님]</a></p>
 				<p><a href="/Webcafe/member/logoutMember.jsp">로그아웃</a></p>
 			</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="/Webcafe/member/userpost.jsp?id=<%= sessionId %>"> 내가 쓴 글 보기 </a></li>
+				<li class="list-group-item"><a href="/Webcafe/member/usergallery.jsp?id=<%= sessionId %>"> 내가 올린 사진 보기</a></li>
+				<button type="button" class="btn btn-success">
+					<a href="/Webcafe/addpost.jsp?id=<%= sessionId%>"> 게시판에 글쓰기 </a>
+				</button>
+				<button type="button" class="btn btn-success">
+					<a href="/Webcafe/addGallery.jsp?id=<%= sessionId%>"> 갤러리에 업로드 </a>
+				</button>
+			</ul>
 		<%
 				}
 				if (rs != null)
@@ -39,17 +49,6 @@
 					conn.close();
 			}
 		%>
-
-		<ul class="list-group list-group-flush">
-			<li class="list-group-item"><a href="/Webcafe/member/userpost.jsp?id=<%= sessionId %>"> 내가 쓴 글 보기 </a></li>
-			<li class="list-group-item"><a href="/Webcafe/member/usergallery.jsp?id=<%= sessionId %>"> 내가 올린 사진 보기</a></li>
-			<button type="button" class="btn btn-success">
-				<a href="/Webcafe/addpost.jsp?id=<%= sessionId%>"> 게시판에 글쓰기 </a>
-			</button>
-			<button type="button" class="btn btn-success">
-				<a href="/Webcafe/addGallery.jsp?id=<%= sessionId%>"> 갤러리에 업로드 </a>
-			</button>
-		</ul>
 
 	</div>
 

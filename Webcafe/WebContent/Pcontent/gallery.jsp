@@ -41,11 +41,13 @@
 								while (rs.next()) {
 				
 							%>
-							<li style=" float: left; width: 300px; height: 262px; margin-right: 10px;">
+							<li style=" float: left; width: 300px; margin-right: 10px;">
 								<a href="/Webcafe/Pcontent/imagegallery.jsp?id=<%=rs.getString("galleryid")%>">
 									<div class="card">
 										<div class="card-body">
-											<img src="/Webcafe/resources/images/<%=rs.getString("image")%>" class="card-img-top">
+											<div style="height: 220px; overflow: hidden; background-color: #f3f3f3;" class="card-img-top">
+												<img src="/Webcafe/resources/images/<%=rs.getString("image")%>" style="width: 150%;">
+											</div>
 											<p class="card-text"><%=rs.getString("username")%></p>
 											<p class="card-text"><%=rs.getString("text")%></p>
 										</div>
@@ -54,6 +56,12 @@
 							</li>
 							<%
 								}
+								if (rs != null) 
+									rs.close();
+								if(pstmt != null)
+									pstmt.close();
+								if(conn != null)
+									conn.close();
 							%>
 						</ul>
 

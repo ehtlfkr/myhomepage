@@ -8,10 +8,10 @@
 	
 	request.setCharacterEncoding("UTF-8");
 	
-	String realFolder = "C:\\Users\\USER\\eclipse-workspace\\Webcafe\\WebContent\\resources\\images";
+	String path = "C:\\Users\\USER\\git\\myhomepage\\Webcafe\\WebContent\\resources\\images";
 	int maxSize = 5 * 1024 * 1024;
 	String encType = "utf-8";
-	MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType, new DefaultFileRenamePolicy());
+	MultipartRequest multi = new MultipartRequest(request, path, maxSize, encType, new DefaultFileRenamePolicy());
 
 	String id = multi.getParameter("id");
 	String password = multi.getParameter("password");

@@ -73,7 +73,7 @@
 							</a>
 							<img style=" width: 600px; margin-left: 10px; display: <%= display%>;" src="../resources/images/<%=rs.getString("image") %>" class="card-img Pimage"
 								alt="이미지">
-							<p class="Ptext">
+							<p class="Ptext" style=" margin-top: 50px;" >
 								<%=rs.getString("text") %>
 							</p>
 							<%

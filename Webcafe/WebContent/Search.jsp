@@ -1,14 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <%@ page import="java.util.*"%>
 <%@ page import="java.sql.*"%>
-<%@ include file="../dbconn.jsp"%>
+<%@ include file="./dbconn.jsp"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="./style.css">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -19,15 +19,15 @@
 </head>
 <body>
 
-	<jsp:include page="../Pcontent/header.jsp" flush="true" />
+	<jsp:include page="./Pcontent/header.jsp" flush="true" />
 
 	<div class="main">
 		<div class="content">
-			<jsp:include page="../Pcontent/user.jsp" flush="true" />
+			<jsp:include page="./Pcontent/user.jsp" flush="true" />
 			
 			<div id="mainpage" class="P_Content">
 				<div class="P_text main_p">
-						<h4>전체글보기</h4>
+						<h4>검색목록</h4>
 						<div>
 							<ul class="postlist list-group list-group-flush">
 								<%
@@ -37,7 +37,7 @@
 									String id = request.getParameter("name");
 									PreparedStatement pstmt = null;
 									ResultSet rs = null;
-									String sql = "select * from post where userid = ?";
+									String sql = "select * from post where username = ?";
 									pstmt = conn.prepareStatement(sql);
 									pstmt.setString(1, id);
 									rs = pstmt.executeQuery();

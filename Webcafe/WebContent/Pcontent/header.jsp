@@ -26,16 +26,9 @@
 					<li class="nav-item"><a class="nav-link"
 						href="/Webcafe/Pcontent/gallery.jsp">갤러리</a></li>
 				</ul>
-				<form class="form-inline my-2 my-lg-0" name="Search" action="./Search.jsp" class="from-horizontal"
-						method="post" accept-charset="utf-8" enctype="multipart/form-data">
-					<select name="searchs" id="searchs">
-						<option value="all"> 전체 </option>
-						<option value="name">이름</option>
-						<option value="title">제목</option>
-					</select>
-					<input class="form-control mr-sm-2" type="search" name="name" placeholder="검색"
-						aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">검색</button>
+				<form class="form-inline my-2 my-lg-0" name="Search" action="/Webcafe/Search.jsp" class="from-horizontal" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+					<input class="form-control mr-sm-2" type="search" name="name" placeholder="검색" aria-label="Search">
+					<input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="검색">
 				</form>
 			</div>
 		</nav>

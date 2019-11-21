@@ -12,7 +12,7 @@
 
 	request.setCharacterEncoding("UTF-8");
 
-	String path = "C:\\Users\\USER\\eclipse-workspace\\Webcafe\\WebContent\\resources\\images";
+	String path = "C:\\Users\\USER\\git\\myhomepage\\Webcafe\\WebContent\\resources\\images";
 
 	int maxsize = 5 * 1024 * 1024;
 	String enType = "utf-8";
