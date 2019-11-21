@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+	margin-bottom: 300px;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    display: block;
+}
+
+a:hover {
+    text-decoration-line: unset !important;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+*::after {
+	content: '';
+	display: block;
+    clear: both;
+}
+
+.card-body {
+	padding: 5px !important;
+}
+
+.post {
+	width: 100%;
+}
+
+header {
+	margin-bottom: 20px;
+}
+
+.main a {
+	color: #000;
+}
+
+.main > .content > .user_if {
+	width: 15%;
+	float: left; 
+}
+
+.main > .content > .user_if > .user {
+	width: 100%;
+	border: 1px solid rgba(0,0,0,.125);
+	padding: 12px 10px 12px 10px;
+	margin-bottom: 20px;
+}
+
+.main > .content > .user_if > .user button {
+	/* float: right; */
+	margin: 10px 0  5px 0;
+}
+
+.main > .content > .user_if > .user ul button a {
+	color: #fff !important;
+}
+
+.main > .content > .user_if > .user p {
+	font-size: 13px;
+	word-break: break-all;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.main > .content > .user_if > .user li {
+	font-size: 13px;
+}
+
+.main > .content > .P_Content {
+	width: 84%;
+	float: right;
+}
+
+.main > .content > .P_Content > .main_p {
+	width: 48%;
+	float: left;
+	margin-left: 20px;
+}
+
+.main > .content > .P_Content .P_text p {
+	width: 100%;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;	
+	margin-bottom: 5px;
+}
+
+.main > .content > .P_Content .P_text h5 {
+	width: 100%;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;	
+}
+
+.main > .content > .P_Content > .P_text > div > ul > li {
+	padding: 0;
+}
+.main > .content > .P_Content .P_text .card {
+	border: 0;
+}
+
+
