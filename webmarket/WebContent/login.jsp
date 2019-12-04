@@ -2,8 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src='http://unpkg.com/jquery@3/dist/jquery.min.js'></script>
 <script src='http://unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
