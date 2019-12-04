@@ -94,9 +94,9 @@
 						</div>
 						
 						<div>
-							<label> 이미지 추가 </label><br>
+							<label> 이미지 수정 </label><br>
 							<div>
-								<input id="image" type="file" name="image">
+								<input id="image" type="file" name="image" value="<%= rs.getString("image")%>">
 								<div class="select_img">
 									<img src="" />
 								</div>

@@ -29,7 +29,7 @@
 			<div class="col-md-6">
 				<img alt="img" src="/Webcafe/resources/images/<%= rs.getString("image") %>" style=" width: 100px; height: 100px; border-radius: 50%; ">
 				<p>
-					<b>이름</b> :
+					<b>아이디</b> :
 					<%=rs.getString("id")%>
 				</p>
 				<p>

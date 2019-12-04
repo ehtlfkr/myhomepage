@@ -83,7 +83,7 @@
 								<a class="btn btn-primary" href="/Webcafe/deletePost.jsp?id=<%=rs.getString("id")%>">삭제</a>
 							<%
 								}
-							%>
+					 		%>
 						</div>
 					</div>
 					<hr>
