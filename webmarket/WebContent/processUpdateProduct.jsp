@@ -6,7 +6,7 @@
 <%@include file="dbconn.jsp"%>
 <%
 	String filename = "";
-	String realFolder = "C:\\Users\\USER\\eclipse-workspace\\webmarket\\WebContent\\resources\\images";
+	String realFolder = "C:\\Users\\USER\\git\\myhomepage\\webmarket\\WebContent\\resources\\images";
 	String encType = "utf-8";
 	int maxSize = 5 * 1024 * 1024;
 
